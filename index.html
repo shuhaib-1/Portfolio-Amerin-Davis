@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Toastify -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Background Shapes -->
     <div class="background-shapes">
@@ -68,28 +72,32 @@
                                 <h2 class="subtitle">Cost and Financial Professional</h2>
                             </div>
                             <div class="description-box glass-effect">
-                                <p class="description">A dedicated finance professional with six years of experience in finance and cost analysis. 
-                                    A member of the Institute of Cost Accountants of India and having completed 9 papers in ACCA, 
+                                <p class="description">A dedicated finance professional with six years of experience in
+                                    finance and cost analysis.
+                                    A member of the Institute of Cost Accountants of India and having completed 9 papers
+                                    in ACCA,
                                     currently serves as a Cost and Financial Analyst.</p>
                             </div>
                             <div class="button-group">
-                                <a href="https://www.linkedin.com/in/cma-amerin-davis-2232501b7/" style="text-decoration: none;">
-                                <button class="btn btn-primary btn-custom glass-effect">
-                                    <i class="fas fa-user-tie"></i> Hire Me
-                                </button>
-                            </a>
-                            <a href="CMA AMERIN DAVIS.pdf" style="text-decoration: none;">
-                                <button class="btn btn-secondary btn-custom glass-effect">
-                                    <i class="fas fa-file-alt"></i> Resume
-                                </button>
-                            </a>
+                                <a href="https://www.linkedin.com/in/cma-amerin-davis-2232501b7/"
+                                    style="text-decoration: none;">
+                                    <button class="btn btn-primary btn-custom glass-effect">
+                                        <i class="fas fa-user-tie"></i> Hire Me
+                                    </button>
+                                </a>
+                                <a href="CMA AMERIN DAVIS.pdf" style="text-decoration: none;">
+                                    <button class="btn btn-secondary btn-custom glass-effect">
+                                        <i class="fas fa-file-alt"></i> Resume
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 text-center">
                         <div class="img-box" data-aos="fade-left" data-aos-duration="1000">
                             <div class="img-wrapper glass-effect">
-                                <img src="WhatsApp Image 2024-09-16 at 11.20.51_1ec0ce6e.jpg" alt="Profile" class="img-fluid">
+                                <img src="WhatsApp Image 2024-09-16 at 11.20.51_1ec0ce6e.jpg" alt="Profile"
+                                    class="img-fluid">
                                 <div class="floating-badge">
                                     <i class="fas fa-chart-line"></i>
                                     <span>Financial Expert</span>
@@ -139,7 +147,7 @@
                             </div>
                             <h3>Bachelor of Commerce</h3>
                             <p>Calicut University</p>
-                            <div class="education-details">                       
+                            <div class="education-details">
                                 <span class="year">Graduated 2015</span>
                             </div>
                         </div>
@@ -208,7 +216,7 @@
                     <h2><i class="fas fa-briefcase"></i> Experience</h2>
                 </div>
                 <div class="timeline">
-                    
+
                     <div class="timeline-item left" data-aos="fade-right">
                         <div class="timeline-content glass-effect">
                             <div class="date"><i class="fas fa-calendar"></i> 2020 - Present</div>
@@ -248,7 +256,8 @@
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
-                                    Provided administrative support, including answering phone calls, responding to emails, and preparing correspondence
+                                    Provided administrative support, including answering phone calls, responding to
+                                    emails, and preparing correspondence
                                 </li>
                                 <li>
                                     <i class="fas fa-check-circle"></i>
@@ -295,16 +304,20 @@
                     </div>
                     <div class="col-lg-6" data-aos="fade-left">
                         <div class="contact-form glass-effect">
-                            <form>
+                            <form id="contactForm" method="POST">
+                                <!-- <input type="hidden" name="access_key" value="6deaed70-f47c-4c5a-b6db-2daa1d9995ab"> -->
+                                <input type="hidden" name="to_name" id="to_name" value="Amerin Davis" required>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email">
+                                    <input type="email" class="form-control" name="email" placeholder="Your Email">
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                                    <textarea class="form-control" rows="5" name="message"
+                                        placeholder="Your Message"></textarea>
                                 </div>
+                                <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
                                 <button type="submit" class="btn btn-primary btn-custom">
                                     <i class="fas fa-paper-plane"></i> Send Message
                                 </button>
@@ -323,7 +336,8 @@
                 <div class="col-lg-4">
                     <div class="footer-info">
                         <h3>Amerin Davis</h3>
-                        <p>A passionate financial professional dedicated to excellence in cost analysis and financial management.</p>
+                        <p>A passionate financial professional dedicated to excellence in cost analysis and financial
+                            management.</p>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -341,8 +355,10 @@
                     <div class="footer-social">
                         <h4>Connect With Me</h4>
                         <div class="social-links">
-                            <a href="https://www.linkedin.com/in/cma-amerin-davis-2232501b7/" class="linkedin"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/amerindaviz/" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/cma-amerin-davis-2232501b7/" class="linkedin"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/amerindaviz/" class="instagram"><i
+                                    class="fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
@@ -360,6 +376,8 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.js"></script>
     <script>
         // Initialize AOS
         AOS.init({
@@ -383,7 +401,7 @@
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section');
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
@@ -400,5 +418,35 @@
             });
         });
     </script>
+    <script>
+        emailjs.init("69lSgZjZNTCJS9Qqf");
+
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            console.log('Form data:', new FormData(this));
+            emailjs.sendForm("service_mvw8cd5", "template_2u8es2r", this)
+                .then(function (response) {
+                    Toastify({
+                        text: "Message sent successfully!",
+                        duration: 3000,
+                        backgroundColor: "linear-gradient(to right, #1E3C72, #2A5298)",
+                        className: "toastify",
+                        close: true
+                    }).showToast();
+                    console.log("Success:", response);
+                }, function (error) {
+                    Toastify({
+                        text: "Failed to send message. Please try again.",
+                        duration: 3000,
+                        backgroundColor: "linear-gradient(to right, #ff5f6d, #ffc3a0)",
+                        className: "toastify",
+                        close: true
+                    }).showToast();
+                    console.error("Error:", error);
+                });
+        });
+    </script>
 </body>
+
 </html>
