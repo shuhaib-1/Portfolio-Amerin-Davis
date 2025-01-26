@@ -435,6 +435,10 @@
                         close: true
                     }).showToast();
                     console.log("Success:", response);
+                    setTimeout(function () {
+                location.reload();
+            }, 2000);
+                    
                 }, function (error) {
                     Toastify({
                         text: "Failed to send message. Please try again.",
@@ -446,6 +450,7 @@
                     console.error("Error:", error);
                 });
         });
+        
     </script>
 </body>
 
